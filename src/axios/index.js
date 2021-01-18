@@ -9,9 +9,7 @@ const instance = axios.create({   //5,创建axios的示例，并且赋值默认�
     timeout:10000, //设置超时时间为10秒
     // baseURL:process.env.NODE_ENV==="production"?'':'/api'
     
-    // baseURL:process.env.NODE_ENV==="production"? 'http://192.168.31.156:8001':"http://192.168.31.151:8001"       //设置默认的请求api
-    // baseURL: window.location.protocol + '//' +window.location.host + '/api' ,      //设置默认的请求api
-    // baseURL:"http://www.unqutest.obcase.cn/api"       //设置默认的请求api
+
     baseURL:"http://192.168.31.18:8080"
 
 })

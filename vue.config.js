@@ -74,7 +74,7 @@ module.exports = {
   productionSourceMap: false, // 生产环境是否生成 sourceMap 文件
   // css相关配置
   css: {
-    extract: true, // 是否使用css分离插件 ExtractTextPlugin
+    // extract: true, // 是否使用css分离插件 ExtractTextPlugin   /开启这个会自动不会热更新
     sourceMap: false, // 开启 CSS source maps?
     loaderOptions: {
         css: {}, // 这里的选项会传递给 css-loader
@@ -89,6 +89,7 @@ module.exports = {
     open: process.platform === 'darwin',
     host: '0.0.0.0', // 允许外部ip访问
     port: 8080, // 端口
+    hot:true, //热更新
     https: false, // 启用https
     overlay: {
       warnings: true,
